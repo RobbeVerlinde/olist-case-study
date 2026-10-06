@@ -1,3 +1,4 @@
+-- Data checks: row count, date range, order status
 Select count(*) from olist_orders_dataset ood ;
 
 Select min(order_purchase_timestamp), max(order_purchase_timestamp) from olist_orders_dataset ood;
