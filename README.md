@@ -11,7 +11,7 @@ How much does late delivery hurt review scores, and does it vary by state or pro
 - Do late orders also cost Olist repeat customers?
 
 ## Data
-Case study with Brazilian E-Commerce Public Dataset by Olist [more info](data/README.md)
+Case study with Brazilian E-Commerce Public Dataset by Olist [README with more info](data/README.md)
 
 ## Findings
 [**Data checks (01_checks)**](sql/01_checks.sql)  
