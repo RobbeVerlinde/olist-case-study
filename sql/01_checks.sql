@@ -1,9 +1,21 @@
--- Data checks: row count, date range, order status
-Select count(*) from olist_orders_dataset ood ;
+-- 01_checks.sql
+-- Purpose: basic checks on the orders table
+-- Findings:
+--   99,441 orders, placed between 2016-09-04 and 2018-10-17
+--   97% delivered, 0.6% canceled, 0.6% unavailable
 
-Select min(order_purchase_timestamp), max(order_purchase_timestamp) from olist_orders_dataset ood;
+-- 1. Total number of orders
+SELECT COUNT(*) AS total_orders
+FROM olist_orders_dataset;
 
-select ood.order_status , count(*) as orders
-from olist_orders_dataset ood 
-group by order_status
-order by orders desc;
+-- 2. Date range of purchases
+SELECT MIN(order_purchase_timestamp) AS first_order,
+       MAX(order_purchase_timestamp) AS last_order
+FROM olist_orders_dataset;
+
+-- 3. Orders per status
+SELECT order_status,
+       COUNT(*) AS orders
+FROM olist_orders_dataset
+GROUP BY order_status
+ORDER BY orders DESC;
