@@ -14,8 +14,8 @@ The raw data files are not included in this repository. Please download them fro
 | `olist_orders_dataset.csv` | `orders` | One row per order, with status and key timestamps |
 | `olist_customers_dataset.csv` | `customers` | Customer IDs and location |
 | `olist_order_items_dataset.csv` | `order_items` | Products in each order, with price and freight |
-| `olist_order_payments_dataset.csv` | `payments` | Payment type and value |
-| `olist_order_reviews_dataset.csv` | `reviews` | Review scores and comments |
+| `olist_order_payments_dataset.csv` | `order_payments` | Payment type and value |
+| `olist_order_reviews_dataset.csv` | `order_reviews` | Review scores and comments |
 | `olist_products_dataset.csv` | `products` | Product details |
 | `olist_sellers_dataset.csv` | `sellers` | Seller location |
 | `olist_geolocation_dataset.csv` | `geolocation` | Zip code coordinates |
