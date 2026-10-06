@@ -4,7 +4,7 @@ The raw data files are not included in this repository. Please download them fro
 
 ## Source
 - **Dataset:** Brazilian E-Commerce Public Dataset by Olist
-- **Where to get it:** [Link to Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce))
+- **Where to get it:** [Link to Kaggle]([https://www.kaggle.com/](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 - **What it contains:** about 100,000 orders placed at a Brazilian online marketplace between 2016 and 2018, with customer, product, payment, delivery and review information. The data is anonymised.
 - **Licence:** see the licence on the Kaggle page before reusing or redistributing the data.
 
