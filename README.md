@@ -18,4 +18,10 @@ Case study with Brazilian E-Commerce Public Dataset by Olist [README with more i
 The dataset has 99.441 orders placed between 2016-09-04 and
 2018-10-17.  
 97% of orders were delivered, so the analysis focuses on
-delivered orders.
+delivered orders.  
+
+[**Data checks (02_delivery_vs_reviews)**](sql/02_delivery_vs_reviews.sql)  
+Out of the 96.470 actually delivered orders, there are a total of 99.224 reviews.  
+From the 547 orders with multiple reviews, we will only use the latest review.  
+There's 88.163 orders that were delivered on time, these get an average review score of 4.29 (9.2%)  
+There's 7.661 orders that were delivered late, these get an average review score of only 2.57 (54.1%)
