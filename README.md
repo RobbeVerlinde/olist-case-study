@@ -24,4 +24,4 @@ delivered orders.
 Out of the 96.470 actually delivered orders, there are a total of 99.224 reviews.  
 From the 547 orders with multiple reviews, we will only use the latest review.  
 There's 88.163 orders that were delivered on time, these get an average review score of 4.29 (9.2%)  
-There's 7.661 orders that were delivered late, these get an average review score of only 2.57 (54.1%)
+There's 7.661 orders that were delivered late, these get an average review score of only 2.57 (54.1%). This is considerably lower.
