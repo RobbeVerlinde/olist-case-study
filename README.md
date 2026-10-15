@@ -21,7 +21,10 @@ The dataset has 99.441 orders placed between 2016-09-04 and
 delivered orders.  
 
 [**Data checks (02_delivery_vs_reviews)**](sql/02_delivery_vs_reviews.sql)  
-Out of the 96.470 actually delivered orders, there are a total of 99.224 reviews.  
-From the 547 orders with multiple reviews, we will only use the latest review.  
-There's 88.163 orders that were delivered on time, these get an average review score of 4.29 (9.2%)  
-There's 7.661 orders that were delivered late, these get an average review score of only 2.57 (54.1%). This is considerably lower.
+The review table has 99,224 reviews. 547 orders have more than one review, so only the latest review per order is used.  
+Of 95,824 delivered orders with a review:  
+  
+88,163 arrived on time and have an average score of 4.29. 9.2% gave a low score (1–2 stars).  
+7,661 arrived late (8.0%) and have an average score of only 2.57. 54.1% gave a low score.  
+  
+Late deliveries score 1.72 points lower and are about 6× more likely to get a low review.
