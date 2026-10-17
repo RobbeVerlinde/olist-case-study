@@ -1,6 +1,6 @@
 # Olist case study: late delivery and review scores
 
-**Status:** in progress | **Tools:** SQL (SQLite, DBeaver), Power BI (planned)
+**Status:** in progress | **Tools:** SQL (SQLite, DBeaver), Power BI (planned) 
 
 ## Main question
 How much does late delivery hurt review scores, and does it vary by state or product category?
