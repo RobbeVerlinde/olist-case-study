@@ -6,16 +6,16 @@
 
 -- 1. Total number of orders
 SELECT COUNT(*) AS total_orders
-FROM olist_orders_dataset;
+FROM orders;
 
 -- 2. Date range of purchases
 SELECT MIN(order_purchase_timestamp) AS first_order,
        MAX(order_purchase_timestamp) AS last_order
-FROM olist_orders_dataset;
+FROM orders;
 
 -- 3. Orders per status
 SELECT order_status,
        COUNT(*) AS orders
-FROM olist_orders_dataset
+FROM orders 
 GROUP BY order_status
 ORDER BY orders DESC;
