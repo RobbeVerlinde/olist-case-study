@@ -7,7 +7,7 @@
 -- 1. Total number of orders
 SELECT COUNT(*) AS total_orders
 FROM orders;
-
+ 
 -- 2. Date range of purchases
 SELECT MIN(order_purchase_timestamp) AS first_order,
        MAX(order_purchase_timestamp) AS last_order
