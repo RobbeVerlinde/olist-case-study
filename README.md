@@ -13,7 +13,7 @@ How much does late delivery hurt review scores, and does it vary by state or pro
 ## Data
 Case study with Brazilian E-Commerce Public Dataset by Olist [README with more info](data/README.md)
 
-## Findings
+## Findings using SQL in DBeaver
 [**Data checks (01_checks)**](sql/01_checks.sql)  
 The dataset has 99.441 orders placed between 2016-09-04 and
 2018-10-17.  
