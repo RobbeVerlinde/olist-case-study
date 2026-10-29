@@ -1,3 +1,17 @@
+-- 03_delay_groups.sql
+-- Purpose: check how the review score changes with the number of days late
+-- Method:
+--   same orders and latest review per order as in 02_delivery_vs_reviews (95,824 orders)
+--   days late = delivered date - estimated date, grouped into 6 groups
+-- Findings:
+--   on time/early   88,163 orders  avg 4.29  9.2% low
+--   1-3 days late    2,636 orders  avg 3.77  19.1% low
+--   4-7 days late    1,773 orders  avg 2.32  61.3% low
+--   8-14 days late   1,748 orders  avg 1.74  78.1% low
+--   15-30 days late  1,161 orders  avg 1.61  81.8% low
+--   30+ days late      343 orders  avg 2.03  68.5% low (small group)
+--   Scores drop sharply after more than 3 days late
+
 -- days late per order
 SELECT o.order_id, 
 	ROUND(JULIANDAY(o.order_delivered_customer_date)-JULIANDAY(o.order_estimated_delivery_date)) AS dayslate
