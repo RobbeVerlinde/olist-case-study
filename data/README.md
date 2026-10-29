@@ -1,7 +1,11 @@
 # Data
 
-The raw data files are not included in this repository. Please download them from the original source.
-
+The raw data files are not included in this repository. Please download them from the original source.  
+  
+The case study uses the Brazilian E-Commerce Public Dataset by Olist, published on Kaggle. Olist is a Brazilian online marketplace where small sellers sell their products through one platform. The dataset contains anonymised data on 99,441 orders placed between September 2016 and October 2018.  
+  
+The data is spread over several linked tables.  
+  
 ## Source
 - **Dataset:** Brazilian E-Commerce Public Dataset by Olist
 - **Where to get it:** [Link to Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
