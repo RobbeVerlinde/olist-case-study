@@ -1,3 +1,16 @@
+-- 02_delivery_vs_reviews.sql
+-- Purpose: compare review scores of late vs. on-time delivered orders
+-- Method:
+--   only delivered orders with a delivery date
+--   late = delivered after the estimated delivery date
+--   547 orders have multiple reviews, so only the latest review per order is used
+-- Findings:
+--   99,224 reviews in total, 96,470 orders delivered
+--   95,824 delivered orders with 1 review were analysed
+--   88,163 on time: avg score 4.29, 9.2% low scores (1-2 stars)
+--   7,661 late:     avg score 2.57, 54.1% low scores
+--   Late orders score 1.72 points lower
+
 -- Actually delivered orders
 SELECT COUNT(*) as delivered_orders,
        COUNT(NULLIF(order_delivered_customer_date,'')) AS with_delivery_date
